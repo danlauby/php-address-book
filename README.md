@@ -9,7 +9,7 @@
 This project is an address book that allows the user to input a contact and display a list of saved contacts. The user has the option to add addtional contacts and the ability to clear their address book. This application is structured with Silex and Twig frameworks.
 
 ## Setup/Installation Requirements
-* Clone project, located at [https://github.com/danlauby/php-address-book.git](php-address-book)
+* Clone project, located at [php-address-book](https://github.com/danlauby/php-address-book.git)
 * Run `composer install --prefer-source --no-interaction` from project root
 * Start PHP in web folder to use Silex
 * Access application by typing localhost:8000 in url of preferred browser
@@ -18,7 +18,7 @@ This project is an address book that allows the user to input a contact and disp
 * No known bugs
 
 ## Support and contact details
-* Contact [https://github.com/danlauby](Dan Lauby) regarding any questions or comments.
+* Contact [Dan Lauby](https://github.com/danlauby) regarding any questions or comments.
 
 ## Technologies Used
 * PHP
