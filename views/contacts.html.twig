@@ -4,29 +4,24 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="{{ app.request.getbaseurl }}/assests/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Sansita" rel="stylesheet">
         <link rel="stylesheet" href="{{ app.request.getbaseurl }}/assests/css/styles.css">
         <title>Address Book</title>
     </head>
     <body>
         <div class="container">
-            <h1>Your new contact:</h1>
-            <div class="row">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h2>{{ newcontact.getName }}</h2>
-
-                    </div>
-                    <div class="panel-body">
-                        <h3><span>Address:</span>{{ newcontact.getAddress }}</h3>
-                        <h3><span>Phone#:</span>{{ newcontact.getPhoneNumber }}</h3>
-                        <h3><a href="/">Add another contact</a></h3>
-
-                    </div>
-
+            <h1>Address Book</h1>
+            <div class="row show-contact">
+                <div class="col-md-6">
+                    <h2 class="contact-title">Your new contact:</h2>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <h2>{{ newcontact.getName }}</h2>
+                    <h3><span class="fancy">Address:</span>{{ newcontact.getAddress }}</h3>
+                    <h3><span class="fancy">Phone#:</span>{{ newcontact.getPhoneNumber }}</h3>
+                    <h3><a href="/">Add another contact</a></h3>
                 </div>
             </div>
-
-
         </div>
     </body>
 </html>

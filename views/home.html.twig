@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="{{ app.request.getbaseurl }}/assests/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Sansita" rel="stylesheet">
         <link rel="stylesheet" href="{{ app.request.getbaseurl }}/assests/css/styles.css">
         <title>Address Book</title>
     </head>
@@ -12,7 +13,7 @@
             <h1>Address Book</h1>
             <div class="row">
                 <div class="col-md-6">
-                    <form class="form-group" action="/contacts" method="post">
+                    <form class="form-group contact-form" action="/contacts" method="post">
                         <label for="name">Name:</label>
                         <input type="text" name="name" class="form-control">
                         <label for="address">Address:</label>
@@ -24,33 +25,32 @@
                     <form action="/delete" method="post">
                         <button type="submit" class="btn btn-danger delete-button">Delete Contacts</button>
                     </form>
-
                 </div>
-            <div class="col-md-6">
-                {% if contacts is not empty %}
-                <div class="panel panel-default">
-                    <div class="panel-heading">Contacts:</div>
-                    <table class="table">
-                        {% for contact in contacts %}
-                        <tr>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>Phone#</th>
-                        </tr>
-                        <tr>
-                            <td>{{ contact.getName }}</td>
-                            <td>{{ contact.getAddress }}</td>
-                            <td>{{ contact.getPhoneNumber }}</td>
-                        </tr>
-                        {% endfor %}
-                    </table>
-                </div>
+                <div class="col-md-6">
+                    {% if contacts is empty %}
+                    <img id="icon" src="{{ app.request.getbaseurl }}/assests/img/address-book.png" alt="image of an address book">
                 {% endif %}
+                {% if contacts is not empty %}
 
+                        <h2>Contacts:</h2>
+                        <table class="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Phone#</th>
+                            </tr>
+                            {% for contact in contacts %}
+                            <tr>
+                                <td>{{ contact.getName }}</td>
+                                <td>{{ contact.getAddress }}</td>
+                                <td>{{ contact.getPhoneNumber }}</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+
+                {% endif %}
+                </div>
             </div>
-
-            </div>
-
         </div>
     </body>
 </html>

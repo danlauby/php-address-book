@@ -1,3 +1,63 @@
 body {
-    background-color: rgba(85, 124, 153, 0.53);
+    background-image: url('../img/book.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: rgba(85, 124, 153, 0.53);*/
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;;
+    font-size: 60px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;    
+}
+
+.fancy {
+    font-family: 'Sansita', sans-serif;
+}
+
+form.contact-form {
+    /*display: block;*/
+    margin-top: 200px;
+    margin-left: 60px;
+}
+
+.delete-button {
+    margin-left: 430px;
+    margin-top: -90px;
+}
+
+.show-contact {
+    margin-top: 130px;
+}
+
+.contact-title {
+    font-family: 'Indie Flower', cursive;
+    margin-left: 180px;
+    margin-top: 170px;
+}
+
+.contact-info {
+    margin-top: 70px;
+    padding-left: 150px;
+
+}
+
+.clear {
+    margin-top: 250px;
+    margin-left: 320px;
+}
+
+#icon {
+    width: 350px;
+    margin-top: 150px;
+    margin-left: 90px;
+}
+
+#home-link {
+    margin-left: 220px;
 }
