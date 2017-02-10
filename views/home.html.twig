@@ -10,7 +10,15 @@
     <body>
         <div class="container">
             <div class="row">
-                
+                {% if contacts is not empty %}
+                    <ul>
+                        {% for contact in contacts %}
+                            <li>{{ contact.getName}}</li>
+                            <li>{{ contact.getAddress}}</li>
+                            <li>{{ contact.getPhoneNumber}}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
             <div class="row">
                 <form class="form-group" action="/contacts" method="post">
