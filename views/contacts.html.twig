@@ -9,10 +9,21 @@
     </head>
     <body>
         <div class="container">
+            <h1>Your new contact:</h1>
             <div class="row">
-                <p>{{ newcontact.getName }}</p>
-                <p>{{ newcontact.getAddress }}</p>
-                <p>{{ newcontact.getPhoneNumber }}</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{ newcontact.getName }}</h2>
+
+                    </div>
+                    <div class="panel-body">
+                        <h3><span>Address:</span>{{ newcontact.getAddress }}</h3>
+                        <h3><span>Phone#:</span>{{ newcontact.getPhoneNumber }}</h3>
+                        <h3><a href="/">Add another contact</a></h3>
+
+                    </div>
+
+                </div>
             </div>
 
 

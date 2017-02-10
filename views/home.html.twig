@@ -9,30 +9,46 @@
     </head>
     <body>
         <div class="container">
+            <h1>Address Book</h1>
             <div class="row">
+                <div class="col-md-6">
+                    <form class="form-group" action="/contacts" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" class="form-control">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" class="form-control">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="text" name="phone-number" class="form-control"><br>
+                        <button type="submit" class="btn btn-success">Add Contact</button>
+                    </form>
+                    <form action="/delete" method="post">
+                        <button type="submit" class="btn btn-danger delete-button">Delete Contacts</button>
+                    </form>
+
+                </div>
+            <div class="col-md-6">
                 {% if contacts is not empty %}
-                    <ul>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Contacts:</div>
+                    <table class="table">
                         {% for contact in contacts %}
-                            <li>{{ contact.getName}}</li>
-                            <li>{{ contact.getAddress}}</li>
-                            <li>{{ contact.getPhoneNumber}}</li>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Phone#</th>
+                        </tr>
+                        <tr>
+                            <td>{{ contact.getName }}</td>
+                            <td>{{ contact.getAddress }}</td>
+                            <td>{{ contact.getPhoneNumber }}</td>
+                        </tr>
                         {% endfor %}
-                    </ul>
+                    </table>
+                </div>
                 {% endif %}
+
             </div>
-            <div class="row">
-                <form class="form-group" action="/contacts" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" class="form-control">
-                    <label for="address">Address:</label>
-                    <input type="text" name="address" class="form-control">
-                    <label for="phone-number">Phone Number:</label>
-                    <input type="text" name="phone-number" class="form-control"><br>
-                    <button type="submit" class="btn btn-success">Add Contact</button>
-                </form>
-                <form action="/delete" method="post">
-                    <button type="submit" class="btn btn-danger">Delete Contacts</button>
-                </form>
+
             </div>
 
         </div>
