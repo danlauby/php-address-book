@@ -43,7 +43,6 @@ This project is an address book that allows the user to input a contact and disp
 |Behavior|Input|Output|
 |--------|-----|------|
 |$new_contact = new Contact()|"new-contact-name","new-contact-address","new-contact-phone-number"|"new-contact-name","new-contact-address","new-contact-phone-number"|
-* Create array to store all contacts
-|Push each new Contact to $_SESSION['list_of_contacts']|$_SESSION['list_of_contacts'] = new-contact|$_SESSION['list_of_contacts'] = [contact, contact, new-contact]|
+|Create array to store all contacts|$_SESSION['list_of_contacts'] = new-contact|$_SESSION['list_of_contacts'] = [contact, contact, new-contact]|
 
 * End specifications
