@@ -6,9 +6,24 @@
         <title>Address Book</title>
     </head>
     <body>
+        <div class="container">
+            <div class="row">
+                <p>{{ newcontact.getName }}</p>
+                <p>{{ newcontact.getAddress }}</p>
+                <p>{{ newcontact.getPhoneNumber }}</p>
+            </div>
+            <div class="row">
+                <form class="form-group" action="/new-contact" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" class="form-control">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" class="form-control">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="text" name="phone-number" class="form-control">
+                    <button type="submit" class="btn btn-success">Add Contact</button>
+                </form>
+            </div>
 
-        <p>{{ newcontact.getName }}</p>
-        <p>{{ newcontact.getAddress }}</p>
-        <p>{{ newcontact.getPhoneNumber }}</p>
+        </div>
     </body>
 </html>
