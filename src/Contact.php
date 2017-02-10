@@ -44,18 +44,18 @@
             return $this->phone_number;
         }
 
-        function saveContact()
+        function save()
         {
-            array_push($_SESSIONS['list_of_contacts'], $this);
+            array_push($_SESSION['list_of_contacts'], $this);
         }
 
         // Super-global functions
-        static function getAllContacts()
+        static function getAll()
         {
             return $_SESSION['list_of_contacts'];
         }
 
-        static function deleteAllContacts()
+        static function deleteAll()
         {
             return $_SESSION['list_of_contacts'] = [];
         }
