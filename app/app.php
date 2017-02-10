@@ -21,7 +21,8 @@
     );
 
     $app->get("/", function() use ($app) {
-        return "hi";
+        $new_contact = new Contact('Trent', '123 ABC Ave Vancouver, WA 98000', '555-555-5555');
+        return $app['twig']->render('home.html.twig', array('newcontact' => $new_contact));
     });
     return $app;
 ?>
