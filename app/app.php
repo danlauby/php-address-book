@@ -21,8 +21,14 @@
     );
 
     $app->get("/", function() use ($app) {
-        $new_contact = new Contact('Trent', '123 ABC Ave Vancouver, WA 98000', '555-555-5555');
-        return $app['twig']->render('home.html.twig', array('newcontact' => $new_contact));
+        return $app['twig']->render('home.html.twig', array('contacts' => Contact::getAll()));
     });
+
+    $app->post("/contacts", function() use ($app) {
+         $contact = new Contact($_POST['name'], $_POST['address'], $_POST['phone-number']);
+         $contact->save();
+         return $app['twig']->render('contacts.html.twig', array('newcontact' => $contact));
+     });
+
     return $app;
 ?>
