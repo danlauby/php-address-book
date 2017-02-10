@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ app.request.getbaseurl }}/assests/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ app.request.getbaseurl }}/assests/css/styles.css">
+        <title>Address Book</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <p>{{ newcontact.getName }}</p>
+                <p>{{ newcontact.getAddress }}</p>
+                <p>{{ newcontact.getPhoneNumber }}</p>
+            </div>
+
+
+        </div>
+    </body>
+</html>

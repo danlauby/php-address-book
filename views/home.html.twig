@@ -10,12 +10,10 @@
     <body>
         <div class="container">
             <div class="row">
-                <p>{{ newcontact.getName }}</p>
-                <p>{{ newcontact.getAddress }}</p>
-                <p>{{ newcontact.getPhoneNumber }}</p>
+                
             </div>
             <div class="row">
-                <form class="form-group" action="/new-contact" method="post">
+                <form class="form-group" action="/contacts" method="post">
                     <label for="name">Name:</label>
                     <input type="text" name="name" class="form-control">
                     <label for="address">Address:</label>
