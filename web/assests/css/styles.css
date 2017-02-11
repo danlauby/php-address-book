@@ -13,7 +13,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Indie Flower', cursive;    
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 .fancy {
@@ -44,12 +49,11 @@ form.contact-form {
 .contact-info {
     margin-top: 70px;
     padding-left: 150px;
-
 }
 
 .clear {
     margin-top: 250px;
-    margin-left: 320px;
+    margin-left: 280px;
 }
 
 #icon {
@@ -59,5 +63,5 @@ form.contact-form {
 }
 
 #home-link {
-    margin-left: 220px;
+    margin-left: 250px;
 }
