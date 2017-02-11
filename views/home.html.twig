@@ -28,6 +28,7 @@
                 </div>
                 <div class="col-md-6">
                     {% if contacts is empty %}
+                    <!-- <h2>Please fill out all fields in form</h3> -->
                     <img id="icon" src="{{ app.request.getbaseurl }}/assests/img/address-book.png" alt="image of an address book">
                 {% endif %}
                 {% if contacts is not empty %}
