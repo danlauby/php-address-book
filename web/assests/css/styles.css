@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+html .container {
+  min-height: 100%;
+}
+
 body {
     background-image: url('../img/book.jpg');
     background-repeat: no-repeat;
@@ -19,6 +27,8 @@ h2 {
 
 h3 {
     font-size: 30px;
+    /*font-family: 'Sansita', sans-serif;*/
+
 }
 
 .fancy {
@@ -64,4 +74,8 @@ form.contact-form {
 
 #home-link {
     margin-left: 250px;
+}
+
+#contact-name {
+    font-size: 60px;
 }

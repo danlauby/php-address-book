@@ -30,7 +30,10 @@
         $phone_number = $_POST['phone-number'];
          $new_contact = new Contact($name, $address, $phone_number);
          $new_contact->save();
-        //  ($_POST['name']);
+         if (empty($name) || empty($address) || empty($phone_number)) {
+             Contact::deleteAll();
+             return $app['twig']->render('home.html.twig', array('contacts' => Contact::getAll()));
+         };
          return $app['twig']->render('contacts.html.twig', array('newcontact' => $new_contact));
      });
 
