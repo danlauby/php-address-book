@@ -26,13 +26,13 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     /*font-family: 'Sansita', sans-serif;*/
 
 }
 
 table {
-    margin-left: -10px;
+    margin-left: -22px;
 }
 
 .fancy {
@@ -41,10 +41,6 @@ table {
 
 form.contact-form {
     margin-left: 60px;
-}
-
-.warning {
-    color: red;
 }
 
 .delete-button {
@@ -63,7 +59,7 @@ form.contact-form {
 }
 
 .contact-info {
-    margin-top: 70px;
+    margin-top: 80px;
     /*padding-left: 50px;*/
 }
 
@@ -88,5 +84,6 @@ form.contact-form {
 }
 
 #contact-name {
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: bold;
 }
