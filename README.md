@@ -37,13 +37,12 @@ This project is an address book that allows the user to input a contact and disp
 * MIT
 
 ## Specifications
- * Setup Silex/Twig app
-* Create Contact Class with name, address, and phone number
 
 |Behavior|Input|Output|
 |--------|-----|------|
 |$new_contact = new Contact()|"new-contact-name","new-contact-address","new-contact-phone-number"|"new-contact-name","new-contact-address","new-contact-phone-number"|
 |Create array to store all contacts|list_of_contacts = new-contact|list_of_contacts = [contact, contact, new-contact]|
+|Allow access to all objects in 'list_of_contacts' array|$new_contact('Bob', '123 abc St', 555-555-5555),$new_contact('Sarah', '456 def St', 666-666-6666) |list_of_contacts = Name:Bob Address:123 abc St Phone number:555-555-5555, Name:Sarah Address:456 def St Phone number:666-666-6666|
 |Display all Contact objects in list-of-contacts array to home page|Select 'add another contact' link|Current contact will display on home page|
 |Give option to delete all contacts in address book|Select 'Delete Contacts' button|list_of_contacts = array()|
 |Check if name has been entered|name = ""|false|
