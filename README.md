@@ -43,6 +43,10 @@ This project is an address book that allows the user to input a contact and disp
 |Behavior|Input|Output|
 |--------|-----|------|
 |$new_contact = new Contact()|"new-contact-name","new-contact-address","new-contact-phone-number"|"new-contact-name","new-contact-address","new-contact-phone-number"|
-|Create array to store all contacts|$_SESSION['list_of_contacts'] = new-contact|$_SESSION['list_of_contacts'] = [contact, contact, new-contact]|
-
+|Create array to store all contacts|list_of_contacts = new-contact|list_of_contacts = [contact, contact, new-contact]|
+|Display all Contact objects in list-of-contacts array to home page|Select 'add another contact' link|Current contact will display on home page|
+|Give option to delete all contacts in address book|Select 'Delete Contacts' button|list_of_contacts = array()|
+|Check if name has been entered|name = ""|false|
+|Check if address has been entered|address = ""|false|
+|Check if phone number has been entered|phone number = ""|false|
 * End specifications

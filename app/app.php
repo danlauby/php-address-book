@@ -31,7 +31,6 @@
          $new_contact = new Contact($name, $address, $phone_number);
          $new_contact->save();
          if (empty($name) || empty($address) || empty($phone_number)) {
-             Contact::deleteAll();
              return $app['twig']->render('home.html.twig', array('contacts' => Contact::getAll()));
          };
          return $app['twig']->render('contacts.html.twig', array('newcontact' => $new_contact));

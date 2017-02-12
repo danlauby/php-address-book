@@ -43,6 +43,10 @@ form.contact-form {
     margin-left: 60px;
 }
 
+.warning {
+    color: red;
+}
+
 .delete-button {
     margin-left: 430px;
     margin-top: -90px;
@@ -60,7 +64,7 @@ form.contact-form {
 
 .contact-info {
     margin-top: 70px;
-    padding-left: 150px;
+    /*padding-left: 50px;*/
 }
 
 .clear {
