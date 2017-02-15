@@ -29,7 +29,7 @@
         $address = $_POST['address'];
         $phone_number = $_POST['phone-number'];
         $new_contact = new Contact($name, $address, $phone_number);
-        $new_contact->save();;
+        $new_contact->save();
         return $app['twig']->render('contacts.html.twig', array('newcontact' => $new_contact));
      });
 
