@@ -10,6 +10,7 @@ This project is an address book that allows the user to input a contact and disp
 
 ## Setup/Installation Requirements
 * Clone project, located at [php-address-book](https://github.com/danlauby/php-address-book.git)
+* Install [Composer](https://getcomposer.org/)
 * Run `composer install --prefer-source --no-interaction` from project root
 * Start PHP in web folder to use Silex
 * Access application by typing localhost:8000 in url of preferred browser
